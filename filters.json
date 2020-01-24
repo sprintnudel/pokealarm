@@ -530,11 +530,11 @@
                 "max_sta":14,
                 "monsters":[535,536,537]
             },
-             "filter_pvp_100er_100315":{
+            "filter_pvp_100er_100315":{
                 "min_atk":10,
                 "max_atk":10,
                 "min_def":3,
-                "max_def":4
+                "max_def":4,
                 "min_sta":15,
                 "max_sta":15,
                 "monsters":[147,148]
