@@ -9,7 +9,7 @@ from PokeAlarm.Utils import (
     get_move_duration, get_move_energy, get_pokemon_size,
     get_applemaps_link, get_time_as_str, get_seconds_remaining,
     get_base_types, get_dist_as_str, get_weather_emoji,
-    get_type_emoji, get_waze_link)
+    get_type_emoji, get_iv_emoji, get_waze_link)
 from . import BaseEvent
 
 
@@ -206,8 +206,11 @@ class MonEvent(BaseEvent):
                 "{:.2f}".format(self.iv) if Unknown.is_not(self.iv)
                 else Unknown.SMALL),
             'atk': self.atk_iv,
+            'atk_emoji': get_iv_emoji(self.atk_iv),
             'def': self.def_iv,
+            'def_emoji': get_iv_emoji(self.def_iv),
             'sta': self.sta_iv,
+            'sta_emoji': get_iv_emoji(self.sta_iv),
 
             # Type
             'type1': type1,
