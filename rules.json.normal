@@ -8,6 +8,10 @@
             "filters":["filter_96_98"],
             "alarms":["alarm_telegram_96_98"]
         },
+        "rule_x-eira":{
+            "filters":["filter_x-eira"],
+            "alarms":["alarm_telegram_x-eira"]
+        },
         "rule_0":{
             "filters":["filter_0"],
             "alarms":["alarm_telegram_0"]
