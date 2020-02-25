@@ -25,7 +25,7 @@
             "alarms":["alarm_telegram_mon_du_jour"]
         },
         "rule_pvp":{
-            "filters":["filter_pvp_common","filter_pvp_rare","filter_pvp_wormadan","filter_pvp_scrafty","filter_pvp_azumarill","filter_pvp_panzaeron","filter_pvp_schilterus","filter_pvp_venusaur","filter_pvp_swampert"],
+            "filters":["filter_pvp_common","filter_pvp_rare","filter_pvp_wormadan","filter_pvp_scrafty","filter_pvp_azumarill","filter_pvp_panzaeron","filter_pvp_schilterus","filter_pvp_venusaur"],
             "alarms":["alarm_telegram_pvp"]
         },
         "rule_pvp_100er":{
