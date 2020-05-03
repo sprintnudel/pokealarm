@@ -587,6 +587,15 @@
                 "max_sta":15,
                 "monsters":[564,565]
             },
+	   "filter_pvp_100er_060111":{
+                "min_atk":6,
+                "max_atk":6,
+                "min_def":1,
+                "max_def":1,
+                "min_sta":11,
+                "max_sta":11,
+                "monsters":[147,148]
+            },
             "filter_pvp_100er_061513":{
                 "min_atk":6,
                 "max_atk":6,
@@ -605,15 +614,6 @@
                 "max_sta":15,
                 "monsters":[412,413]
             },
-	    "filter_pvp_100er_080213":{
-                "min_atk":8,
-                "max_atk":8,
-                "min_def":2,
-                "max_def":2,
-                "min_sta":13,
-                "max_sta":13,
-                "monsters":[147,148]
-            },
             "filter_pvp_100er_081515":{
                 "min_atk":8,
                 "max_atk":8,
@@ -622,15 +622,6 @@
                 "min_sta":15,
                 "max_sta":15,
                 "monsters":[60,61,62,183,184,355,356]
-            },
-	    "filter_pvp_100er_090214":{
-                "min_atk":9,
-                "max_atk":9,
-                "min_def":2,
-                "max_def":2,
-                "min_sta":14,
-                "max_sta":14,
-                "monsters":[147,148]
             },
             "filter_pvp_100er_101515":{
                 "min_atk":10,
@@ -650,10 +641,10 @@
                 "max_sta":14,
                 "monsters":[535,536,537]
             },
-            "filter_pvp_100er_100315":{
+            "filter_pvp_100er_100415":{
                 "min_atk":10,
                 "max_atk":10,
-                "min_def":3,
+                "min_def":4,
                 "max_def":4,
                 "min_sta":15,
                 "max_sta":15,
