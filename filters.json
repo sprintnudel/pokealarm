@@ -8,6 +8,18 @@
             "filter_100":{
                 "min_iv":100 
             },
+            "filter_100_kern":{
+                "min_iv":100,
+		"geofences":["Kerngebiet"]
+            },
+            "filter_100_eggenreut":{
+                "min_iv":100,
+		"geofences":["Eggenstein","Neureut"]
+            },
+            "filter_100_durlach":{
+                "min_iv":100,
+		"geofences":["Aue"]
+            },
             "filter_96_98":{
                 "min_iv":95,
                 "max_iv":98

@@ -4,6 +4,18 @@
             "filters":["filter_100","filter_rare_96_plus","filter_icognito"],
             "alarms":["alarm_telegram_100"]
         },
+        "rule_100_kern":{
+            "filters":["filter_100_kern"],
+            "alarms":["alarm_telegram_100_kern"]
+        },
+        "rule_100_eggenreut":{
+            "filters":["filter_100_eggenreut"],
+            "alarms":["alarm_telegram_100_eggenreut"]
+        },
+        "rule_100_durlach":{
+            "filters":["filter_100_durlach"],
+            "alarms":["alarm_telegram_100_durlach"]
+        },
         "rule_96_98":{
             "filters":["filter_96_98"],
             "alarms":["alarm_telegram_96_98"]
