@@ -1,7 +1,7 @@
 {
     "monsters":{
         "rule_100":{
-            "filters":["filter_100","filter_rare_96_plus","filter_icognito"],
+            "filters":["filter_100","filter_any_iv_rare"],
             "alarms":["alarm_telegram_100"]
         },
         "rule_100_kern":{
@@ -15,6 +15,14 @@
         "rule_100_durlach":{
             "filters":["filter_100_durlach"],
             "alarms":["alarm_telegram_100_durlach"]
+        },
+        "rule_100_rare":{
+            "filters":["filter_100_rare","filter_any_iv_rare"],
+            "alarms":["alarm_telegram_100_rare"]
+        },
+        "rule_extremists":{
+            "filters":["filter_extremely_high","filter_extremely_low"],
+            "alarms":["alarm_telegram_extremists"]
         },
         "rule_96_98":{
             "filters":["filter_96_98"],

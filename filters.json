@@ -10,15 +10,30 @@
             },
             "filter_100_kern":{
                 "min_iv":100,
-		"geofences":["Kerngebiet"]
+                "geofences":["Kerngebiet"]
             },
             "filter_100_eggenreut":{
                 "min_iv":100,
-		"geofences":["Eggenstein","Neureut"]
+                "geofences":["Eggenstein","Neureut"]
             },
             "filter_100_durlach":{
                 "min_iv":100,
-		"geofences":["Aue"]
+                "geofences":["Aue"]
+            },
+            "filter_100_rare":{
+                "min_iv":100,
+                "monsters":[106,107,108,113,114,131,142,143,147,148,149,237,242,246,247,248,358,371,372,373,374,375,376,408,409,443,444,445,532,533,534,554,555,566,567,607,608,609,610,611,612,622,623,633,634,635]
+            },
+            "filter_any_iv_rare":{
+                "monsters":[176,201,481]
+            },
+            "filter_extremely_high":{
+                "min_iv":100,
+                "min_lvl":35
+            },
+            "filter_extremely_low":{
+                "max_iv":0,
+                "max_lvl":1
             },
             "filter_96_98":{
                 "min_iv":95,
@@ -27,15 +42,8 @@
             "filter_0":{
                 "max_iv":0
             },
-            "filter_icognito":{
-                "monsters":[201]
-            },
             "filter_x-eira":{
                 "monsters":[440,113,242]
-            },
-            "filter_rare_96_plus":{
-                "min_iv":95,
-                "monsters":[113,131,143,147,148,149,242,246,247,248,303,358,359,371,372,374,375,408,410,443,444]
             },
             "filter_rare_spawns":{
                 "max_iv":98,
@@ -51,7 +59,7 @@
             },
             "filter_mon_du_jour_cday":{
                 "min_iv":95,
-                "monsters":[63]
+                "monsters":[273]
             },
             "filter_pvp_common":{
                 "max_atk":2,
