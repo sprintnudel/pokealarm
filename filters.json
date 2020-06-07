@@ -71,14 +71,21 @@
                 "max_atk":2,
                 "min_def":10,
                 "min_sta":10,
-                "monsters":[107,108,131,143,147,148,149,176,204,205,237,241,358,359,403,404,405,421,442,447,448,557,558,559,560,564,565,594,597,598,622,623,629,630,633,634,635]
+                "monsters":[107,108,131,143,147,148,149,176,204,205,237,241,358,359,403,404,405,442,447,448,557,558,559,560,564,565,594,597,598,622,623,629,630,633,634,635]
             },
             "filter_pvp_scrafty":{
                 "max_atk":0,
                 "min_def":7,
                 "max_def":9,
                 "min_sta":14,
-                "monsters":[204,205,421,479,532,533,559,560,592,593]
+                "monsters":[204,205,479,532,533,559,560,592,593]
+            },
+	    "filter_pvp_cherrim":{
+                "max_atk":2,
+                "min_def":10,
+                "min_sta":14,
+                "monsters":[421],
+		"form_ids":["095"]
             },
             "filter_pvp_castform":{
                 "min_atk":3,
@@ -86,7 +93,8 @@
                 "min_def":12,
                 "max_def":15,
                 "min_sta":15,
-                "monsters":[351]
+                "monsters":[351],
+		"form_ids":["030","031","032"]
             },
             "filter_pvp_100er_001515":{
                 "min_atk":0,
@@ -203,7 +211,17 @@
                 "max_def":13,
                 "min_sta":15,
                 "max_sta":15,
-                "monsters":[4,5,6,35,36,48,49,79,80,81,82,147,148,149,155,156,157,177,178,179,180,181,296,297,315,349,350,374,375,376,390,391,392,393,394,395,406,421,554,588,589,594,629,630,808,809]
+                "monsters":[4,5,6,35,36,48,49,79,80,81,82,147,148,149,155,156,157,177,178,179,180,181,296,297,315,349,350,374,375,376,390,391,392,393,394,395,406,554,588,589,594,629,630,808,809]
+            },
+	    "filter_pvp_100er_001315_cherrim":{
+                "min_atk":0,
+                "max_atk":0,
+                "min_def":13,
+                "max_def":13,
+                "min_sta":15,
+                "max_sta":15,
+                "monsters":[421],
+		"form_ids":["095"]
             },
             "filter_pvp_100er_001314":{
                 "min_atk":0,
@@ -367,6 +385,16 @@
                 "max_sta":15,
                 "monsters":[37,38,72,73,204,205,559,560,592,593]
             },
+	    "filter_pvp_100er_000815_cherrim":{
+                "min_atk":0,
+                "max_atk":0,
+                "min_def":8,
+                "max_def":8,
+                "min_sta":15,
+                "max_sta":15,
+                "monsters":[421],
+		"form_ids":["095"]
+            },
 	    "filter_pvp_100er_000814":{
                 "min_atk":0,
                 "max_atk":0,
@@ -439,14 +467,15 @@
                 "max_sta":15,
                 "monsters":[58,59]
             },
-	    "filter_pvp_100er_011215":{
+	    "filter_pvp_100er_011215_cherrim":{
                 "min_atk":1,
                 "max_atk":1,
                 "min_def":12,
                 "max_def":12,
                 "min_sta":15,
                 "max_sta":15,
-                "monsters":[421]
+                "monsters":[421],
+		"form_ids":["095"]
             },
 	    "filter_pvp_100er_011115":{
                 "min_atk":1,
@@ -529,23 +558,25 @@
                 "max_sta":14,
                 "monsters":[147,148,149,532,533,534]
             },
-            "filter_pvp_100er_031415":{
+            "filter_pvp_100er_031415_castform":{
                 "min_atk":3,
                 "max_atk":3,
                 "min_def":14,
                 "max_def":14,
                 "min_sta":15,
                 "max_sta":15,
-                "monsters":[351]
+                "monsters":[351],
+		"form_ids":["030","031","032"]
             },
-	    "filter_pvp_100er_041415":{
+	    "filter_pvp_100er_041415_castform":{
                 "min_atk":4,
                 "max_atk":4,
                 "min_def":14,
                 "max_def":14,
                 "min_sta":15,
                 "max_sta":15,
-                "monsters":[351]
+                "monsters":[351],
+		"form_ids":["030","031","032"]
             },
             "filter_pvp_100er_041514":{
                 "min_atk":4,
