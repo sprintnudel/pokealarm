@@ -100,6 +100,31 @@
                 "monsters":[351],
 		"form_ids":["030","031","032"]
             },
+	    "filter_pvp_gofest_001015":{
+                "max_atk":0,
+                "min_def":10,
+                "max_def":10,
+                "min_sta":15
+            },
+	    "filter_pvp_gofest_001313":{
+                "max_atk":0,
+                "min_def":13,
+                "max_def":13,
+                "min_sta":13,
+                "max_sta":13
+             },
+	    "filter_pvp_gofest_001515":{
+                "max_atk":0,
+                "min_def":15,
+                "min_sta":15
+            },
+	    "filter_pvp_gofest_021514":{
+                "min_atk":2,
+                "max_atk":2,
+                "min_def":15,
+                "min_sta":14,
+                "max_sta":14
+             },
             "filter_pvp_100er_001515":{
                 "min_atk":0,
                 "max_atk":0,
