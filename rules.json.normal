@@ -45,7 +45,7 @@
             "alarms":["alarm_telegram_mon_du_jour"]
         },
         "rule_pvp":{
-            "filters":["filter_pvp_common","filter_pvp_rare","filter_pvp_castform","filter_pvp_scrafty","filter_pvp_cherrim"],
+            "filters":["filter_pvp_common","filter_pvp_rare","filter_pvp_castform","filter_pvp_scrafty","filter_pvp_cherrim","filter_pvp_gofest_001015","filter_pvp_gofest_001313","filter_pvp_gofest_001515","filter_pvp_gofest_021514"],
             "alarms":["alarm_telegram_pvp"]
         },
         "rule_pvp_100er":{
