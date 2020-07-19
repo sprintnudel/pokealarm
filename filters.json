@@ -20,6 +20,10 @@
                 "min_iv":100,
                 "geofences":["Aue"]
             },
+            "filter_100_waldstadt_hagsfeld":{
+                "min_iv":100,
+                "geofences":["Hagsfeld"]
+            },
             "filter_100_rare":{
                 "min_iv":100,
                 "monsters":[106,107,108,113,114,131,142,143,147,148,149,237,242,246,247,248,358,371,372,373,374,375,376,408,409,443,444,445,532,533,534,554,555,566,567,607,608,609,610,611,612,622,623,633,634,635]
@@ -59,7 +63,7 @@
             },
             "filter_mon_du_jour_cday":{
                 "min_iv":95,
-                "monsters":[273]
+                "monsters":[92]
             },
             "filter_pvp_common":{
                 "max_atk":2,

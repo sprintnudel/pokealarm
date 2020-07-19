@@ -16,6 +16,10 @@
             "filters":["filter_100_durlach"],
             "alarms":["alarm_telegram_100_durlach"]
         },
+        "rule_100_waldstadt_hagsfeld":{
+            "filters":["filter_100_waldstadt_hagsfeld"],
+            "alarms":["alarm_telegram_100_waldstadt_hagsfeld"]
+        },
         "rule_100_rare":{
             "filters":["filter_100_rare","filter_any_iv_rare"],
             "alarms":["alarm_telegram_100_rare"]
