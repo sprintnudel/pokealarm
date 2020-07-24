@@ -12,8 +12,12 @@ log = logging.getLogger('Locale')
 # Locale object is used to get different translations in other languages
 class Locale(object):
 
+    name = 'en'
+
     # Load in the locale information from the specified json file
     def __init__(self, language):
+        # Set language name
+        self.name = language
         # Load in English as the default
         with open(os.path.join(get_path('locales'), 'en.json')) as f:
             default = json.loads(f.read())
@@ -40,6 +44,12 @@ class Locale(object):
         teams = info.get("teams", {})
         for id_, val in default["teams"].iteritems():
             self.__team_names[int(id_)] = teams.get(id_, val)
+
+        # Team ID -> Color
+        self.__team_colors = {}
+        team_colors = info.get("team_colors", {})
+        for id_, val in default["team_colors"].iteritems():
+            self.__team_colors[int(id_)] = team_colors.get(id_, val)
 
         # Team ID -> Team Leaders
         self.__leader_names = {}
@@ -105,9 +115,34 @@ class Locale(object):
 
         # Quest Type ID -> Quest Type Name
         self.__quest_type_names = {}
-        quest_types = info.get('quest_types', {})
-        for id_, val in default['quest_types'].iteritems():
-            self.__quest_type_names[int(id_)] = quest_types.get(id_, val)
+        quest_reward_types = info.get('quest_reward_types', {})
+        for id_, val in default['quest_reward_types'].iteritems():
+            self.__quest_type_names[int(id_)] = \
+                quest_reward_types.get(id_, val)
+
+        # Item ID -> Item Name
+        self.__item_names = {}
+        items = info.get('items', {})
+        for id_, val in default['items'].iteritems():
+            self.__item_names[int(id_)] = items.get(id_, val)
+
+        # Lure Type ID -> Lure Type Name
+        self.__lure_type_names = {}
+        lure_types = info.get('lure_types', {})
+        for id_, val in default['lure_types'].iteritems():
+            self.__lure_type_names[int(id_)] = lure_types.get(id_, val)
+
+        # Grunt ID -> Grunt Type Name
+        self.__grunt_type_names = {}
+        grunt_types = info.get('grunt_types', {})
+        for id_, val in default['grunt_types'].iteritems():
+            self.__grunt_type_names[int(id_)] = grunt_types.get(id_, val)
+
+        # Grunt ID -> Grunt Gender
+        self.__grunt_genders = {}
+        grunt_genders = info.get('grunt_genders', {})
+        for id_, val in default['grunt_genders'].iteritems():
+            self.__grunt_genders[int(id_)] = grunt_genders.get(id_, val)
 
         log.debug("Loaded '{}' locale successfully!".format(language))
 
@@ -125,9 +160,13 @@ class Locale(object):
     def get_team_name(self, team_id):
         return self.__team_names.get(team_id, 'unknown')
 
-    # Returns the name of the team ledaer associated with the Team ID
+    # Returns the name of the team leader associated with the Team ID
     def get_leader_name(self, team_id):
         return self.__leader_names.get(team_id, 'unknown')
+	
+    # Returns the name of the color associated with the Team ID
+    def get_team_color(self, team_id):
+        return self.__team_colors.get(team_id, 'unknown')
 
     # Returns the name of the weather associated with the given ID
     def get_weather_name(self, weather_id):
@@ -165,3 +204,54 @@ class Locale(object):
 
     def get_quest_type_name(self, quest_type_id):
         return self.__quest_type_names.get(quest_type_id, 'unknown')
+
+    def get_lure_type_name(self, lure_type_id):
+        return self.__lure_type_names.get(lure_type_id, 'unknown')
+
+    def get_grunt_type_name(self, grunt_type_id):
+        return self.__grunt_type_names.get(grunt_type_id, 'unknown')
+
+    def get_grunt_gender_name(self, grunt_type_id):
+        return self.__grunt_genders.get(grunt_type_id, 'unknown')
+
+    def adjective_placement(self):
+        """ true is before, false is after """
+        return self.name in ['en', 'de']
+
+    def get_quest_monster_reward(self, monster):
+        reward_template = '{form_with_space}{monster}'
+        if not self.adjective_placement():
+            reward_template = '{monster} {form}'
+        return reward_template.format(
+            # costume_with_space=
+            # (self.get_costume_name(monster.id, monster.costume) + ' '
+            #  if monster.costume != 0 else ''),
+            # costume=self.get_costume_name(monster.id, monster.costume),
+            form=self.get_form_name(monster['id'], monster['form']),
+            form_with_space=self.get_form_name(monster['id'], monster['form'])
+            + ' '
+            if monster['form'] != 0 and self.get_form_name(
+                monster['id'], monster['form']) not in ['Normal', 'Normale']
+            else '',
+            monster=self.get_pokemon_name(monster['id']))
+
+    def get_quest_item_reward(self, item):
+        item_name = self.get_item_name(item['id'])
+        reward_template = '{amount} {item}'
+        if not self.adjective_placement():
+            reward_template = '{item} {amount}'
+        return reward_template.format(
+            amount=item['amount'],
+            type=item['type'],
+            item=item_name)
+
+    def get_quest_generic_reward(self, reward_type_id, reward_amount):
+        reward_name = self.get_quest_type_name(reward_type_id)
+        if self.adjective_placement():
+            return '{reward_amount} {reward_name}'.format(
+                reward_amount=reward_amount, reward_name=reward_name)
+        return '{reward_name} {reward_amount}'.format(
+            reward_name=reward_name, reward_amount=reward_amount)
+
+    def get_item_name(self, item_id):
+        return self.__item_names.get(item_id, 'unknown')

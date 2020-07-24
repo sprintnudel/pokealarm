@@ -3,6 +3,7 @@ import re
 
 # 3rd Party Imports
 from slacker import Slacker
+import six
 
 # Local Imports
 from PokeAlarm.Alarms import Alarm
@@ -33,7 +34,7 @@ class SlackAlarm(Alarm):
         },
         'stops': {
             'username': "Pokestop",
-            'icon_url': get_image_url("regular/stop/ready.png"),
+            'icon_url': get_image_url("regular/stop/<lure_type_id_3>.png"),
             'title': "Someone has placed a lure on a Pokestop!",
             'url': "<gmaps>",
             'body': "Lure will expire at <24h_time> (<time_left>)."
@@ -71,10 +72,19 @@ class SlackAlarm(Alarm):
         },
         'quests': {
             'username': "Quest",
-            'icon_url': get_image_url("regular/quest/<type_id>.png"),
+            'icon_url': get_image_url("regular/<quest_image>.png"),
             'title': "New Quest Found!",
             'url': "<gmaps>",
-            'body': "Quest will expire at midnight."
+            'body': "New quest for <reward>\nTask: <quest_task>"
+        },
+        'invasions': {
+            'username': "Invasion",
+            'content': "",
+            'icon_url':
+                get_image_url("regular/invasions/<type_id_3>.png"),
+            'title': "This Pokestop has been invaded by Team Rocket!",
+            'url': "<gmaps>",
+            'body': "Invasion will expire at <24h_time> (<time_left>)."
         }
     }
 
@@ -111,6 +121,8 @@ class SlackAlarm(Alarm):
             settings.pop('weather', {}), self._defaults['weather'])
         self.__quests = self.create_alert_settings(
             settings.pop('quests', {}), self._defaults['quests'])
+        self.__invasions = self.create_alert_settings(
+            settings.pop('invasions', {}), self._defaults['invasions'])
 
         # Warn user about leftover parameters
         reject_leftover_parameters(settings, "'Alarm level in Slack alarm.")
@@ -131,6 +143,7 @@ class SlackAlarm(Alarm):
 
     # Set the appropriate settings for each alert
     def create_alert_settings(self, settings, default):
+        map = settings.pop('map', self.__map)
         alert = {
             'channel': settings.pop('channel', self.__default_channel),
             'username': settings.pop('username', default['username']),
@@ -138,8 +151,8 @@ class SlackAlarm(Alarm):
             'title': settings.pop('title', default['title']),
             'url': settings.pop('url', default['url']),
             'body': settings.pop('body', default['body']),
-            'map': get_static_map_url(
-                settings.pop('map', self.__map), self.__static_map_key)
+            'map': map if isinstance(map, six.string_types) else
+            get_static_map_url(map, self.__static_map_key)
         }
         reject_leftover_parameters(settings, "'Alert level in Slack alarm.")
         return alert
@@ -152,7 +165,9 @@ class SlackAlarm(Alarm):
         }
         attachments = [{
             'fallback': 'Map_Preview',
-            'image_url': replace(alert['map'], coords)
+            'image_url':
+                replace(alert['map'],
+                        info if isinstance(map, six.string_types) else coords)
         }] if alert['map'] is not None else None
         self.send_message(
             channel=replace(alert['channel'], info),
@@ -191,6 +206,10 @@ class SlackAlarm(Alarm):
     # Trigger quest alert
     def quest_alert(self, quest_info):
         self.send_alert(self.__quests, quest_info)
+
+    # Trigger invasion alert
+    def invasion_alert(self, invasion_info):
+        self.send_alert(self.__invasions, invasion_info)
 
     # Get a list of channels from Slack to help
     def update_channels(self):
