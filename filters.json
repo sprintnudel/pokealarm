@@ -50,7 +50,6 @@
                 "monsters":[440,113,242]
             },
             "filter_rare_spawns":{
-                "max_iv":98,
                 "monsters":[532,533,534,566,567,610,611,612,633,634,635]
             },
             "filter_mon_du_jour_lvl20":{
