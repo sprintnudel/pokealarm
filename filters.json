@@ -18,7 +18,7 @@
             },
             "filter_100_durlach":{
                 "min_iv":100,
-                "geofences":["Aue"]
+                "geofences":["Durlach","Aue","Grötzingen"]
             },
             "filter_100_waldstadt_hagsfeld":{
                 "min_iv":100,
