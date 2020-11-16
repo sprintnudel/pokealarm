@@ -60,8 +60,8 @@
                 "monsters":[359,525,526,531,554,564,565,607,608,609,622,623,632]
             },
             "filter_mon_du_jour_cday":{
-                "min_iv":95,
-                "monsters":[4]
+                "min_iv":97,
+                "monsters":[126]
             },
             "filter_pvp_common":{
                 "max_atk":2,
