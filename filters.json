@@ -67,7 +67,7 @@
                 "max_atk":2,
                 "min_def":12,
                 "min_sta":12,
-                "monsters":[303,479,554,592,593,610,611,612,631]
+                "monsters":[303,479,554,592,593,610,611,612]
             },
             "filter_pvp_rare":{
                 "max_atk":2,
@@ -433,7 +433,7 @@
                 "max_def":9,
                 "min_sta":14,
                 "max_sta":14,
-                "monsters":[25,26,270,271,272,345,346,532,533,534]
+                "monsters":[25,26,270,271,272,345,346,532,533,534,707]
             },
             "filter_pvp_100er_000913":{
                 "min_atk":0,
@@ -560,7 +560,7 @@
                 "max_def":13,
                 "min_sta":14,
                 "max_sta":14,
-                "monsters":[702]
+                "monsters":[702,707]
             },
             "filter_pvp_100er_011215":{
                 "min_atk":1,
