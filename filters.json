@@ -550,7 +550,7 @@
                 "max_def":13,
                 "min_sta":15,
                 "max_sta":15,
-                "monsters":[123]
+                "monsters":[123,453,454]
             },
             "filter_pvp_100er_011314":{
                 "min_atk":1,
