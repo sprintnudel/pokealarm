@@ -36,6 +36,26 @@
             "filters":["filter_x-eira"],
             "alarms":["alarm_telegram_x-eira"]
         },
+        "rule_ef_em":{
+            "filters":["filter_ef_em"],
+            "alarms":["alarm_telegram_ef_em"]
+        },
+        "rule_kaumalat":{
+            "filters":["filter_kaumalat"],
+            "alarms":["alarm_telegram_kaumalat"]
+        },
+        "rule_milza":{
+            "filters":["filter_milza"],
+            "alarms":["alarm_telegram_milza"]
+        },
+        "rule_flapteryx":{
+            "filters":["filter_flapteryx"],
+            "alarms":["alarm_telegram_flapteryx"]
+        },
+        "rule_kapuno":{
+            "filters":["filter_kapuno"],
+            "alarms":["alarm_telegram_kapuno"]
+        },
         "rule_0":{
             "filters":["filter_0"],
             "alarms":["alarm_telegram_0"]

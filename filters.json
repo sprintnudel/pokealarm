@@ -49,6 +49,21 @@
             "filter_x-eira":{
                 "monsters":[440,113,242]
             },
+            "filter_ef_em":{
+                "monsters":[714,715]
+            },
+            "filter_kaumalat":{
+                "monsters":[443,444,445]
+            },
+            "filter_milza":{
+                "monsters":[610,611,612]
+            },
+            "filter_flapteryx":{
+                "monsters":[566,567]
+            },
+            "filter_kapuno":{
+                "monsters":[633,634,635]
+            },
             "filter_rare_spawns":{
                 "monsters":[443,444,445,532,533,534,566,567,610,611,612,633,634,635,714]
             },
