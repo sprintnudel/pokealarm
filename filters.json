@@ -24,12 +24,13 @@
                 "min_iv":100,
                 "geofences":["Hagsfeld"]
             },
+            "filter_mon_du_jour_cday":{
+                "min_iv":97,
+                "monsters":[661]
+            },
             "filter_100_rare":{
                 "min_iv":100,
                 "monsters":[106,107,108,113,114,131,142,143,147,148,149,237,242,246,247,248,358,371,372,373,374,375,376,408,409,443,444,445,532,533,534,554,555,566,567,607,608,609,610,611,612,622,623,633,634,635,714]
-            },
-            "filter_any_iv_rare":{
-                "monsters":[176,201,481]
             },
             "filter_extremely_high":{
                 "min_iv":100,
@@ -64,8 +65,20 @@
             "filter_kapuno":{
                 "monsters":[633,634,635]
             },
+            "filter_relaxo":{
+                "monsters":[446,143]
+            },
+            "filter_icognito":{
+                "monsters":[201]
+            },
+            "filter_vesprit":{
+                "monsters":[481]
+            },
+            "filter_togetic":{
+                "monsters":[175,176,468]
+            },
             "filter_rare_spawns":{
-                "monsters":[443,444,445,532,533,534,566,567,610,611,612,633,634,635,714]
+                "monsters":[443,444,445,532,533,534,566,567,610,611,612,633,634,635,714,201,481,175,176,468]
             },
             "filter_mon_du_jour_lvl20":{
                 "min_lvl":20,
@@ -73,10 +86,6 @@
              },
             "filter_mon_du_jour":{
                 "monsters":[359,525,526,531,554,564,565,607,608,609,622,623,632]
-            },
-            "filter_mon_du_jour_cday":{
-                "min_iv":97,
-                "monsters":[66]
             },
             "filter_pvp_common":{
                 "max_atk":2,

@@ -1,7 +1,7 @@
 {
     "monsters":{
         "rule_100":{
-            "filters":["filter_100","filter_any_iv_rare"],
+            "filters":["filter_100"],
             "alarms":["alarm_telegram_100"]
         },
         "rule_100_kern":{
@@ -21,7 +21,7 @@
             "alarms":["alarm_telegram_100_waldstadt_hagsfeld"]
         },
         "rule_100_rare":{
-            "filters":["filter_100_rare","filter_any_iv_rare"],
+            "filters":["filter_100_rare"],
             "alarms":["alarm_telegram_100_rare"]
         },
         "rule_extremists":{
@@ -55,6 +55,22 @@
         "rule_kapuno":{
             "filters":["filter_kapuno"],
             "alarms":["alarm_telegram_kapuno"]
+        },
+        "rule_relaxo":{
+            "filters":["filter_relaxo"],
+            "alarms":["alarm_telegram_relaxo"]
+        },
+        "rule_icognito":{
+            "filters":["filter_icognito"],
+            "alarms":["alarm_telegram_icognito"]
+        },
+        "rule_vesprit":{
+            "filters":["filter_vesprit"],
+            "alarms":["alarm_telegram_vesprit"]
+        },
+        "rule_togetic":{
+            "filters":["filter_togetic"],
+            "alarms":["alarm_telegram_togetic"]
         },
         "rule_0":{
             "filters":["filter_0"],
