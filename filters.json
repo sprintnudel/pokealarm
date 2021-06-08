@@ -91,7 +91,7 @@
                 "max_atk":2,
                 "min_def":12,
                 "min_sta":12,
-                "monsters":[303,479,554,580,610,611,612]
+                "monsters":[303,479,554,610,611,612]
             },
             "filter_pvp_rare":{
                 "max_atk":2,
