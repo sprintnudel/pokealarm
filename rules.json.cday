@@ -88,6 +88,10 @@
             "filters":["filter_mon_du_jour_cday"],
             "alarms":["alarm_telegram_mon_du_jour"]
         },
+        "rule_100_shinyjagd":{
+            "filters":["filter_100_shinyjagd","filter_100_shinyjagd_raichu","filter_100_shinyjagd_sandan","filter_100_shinyjagd_vulpix","filter_100_shinyjagd_mauzi","filter_100_shinyjagd_ponita","filter_100_shinyjagd_lahmus","filter_100_shinyjagd_porenta","filter_100_shinyjagd_sleima","filter_100_shinyjagd_kokowei","filter_100_shinyjagd_knogga","filter_100_shinyjagd_smogmog","filter_100_shinyjagd_sniebel","filter_100_shinyjagd_zigzachs","filter_100_shinyjagd_flampion"],
+            "alarms":["alarm_telegram_100_shinyjagd"]
+        },
         "rule_pvp":{
             "filters":["filter_pvp_common","filter_pvp_rare","filter_pvp_castform","filter_pvp_scrafty","filter_pvp_cherrim","filter_pvp_lickitung"],
             "alarms":["alarm_telegram_pvp"]
