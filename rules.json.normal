@@ -24,6 +24,10 @@
             "filters":["filter_100_rare"],
             "alarms":["alarm_telegram_100_rare"]
         },
+        "rule_100_nuetzlich":{
+            "filters":["filter_100_nuetzlich"],
+            "alarms":["alarm_telegram_100_nuetzlich","filter_shundo_flunschlik"]
+        },
         "rule_extremists":{
             "filters":["filter_extremely_high","filter_extremely_low"],
             "alarms":["alarm_telegram_extremists"]
