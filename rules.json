@@ -20,6 +20,34 @@
             "filters":["filter_100_waldstadt_hagsfeld"],
             "alarms":["alarm_telegram_100_waldstadt_hagsfeld"]
         },
+        "rule_100_daxlanden":{
+            "filters":["filter_100_daxlanden"],
+            "alarms":["alarm_telegram_100_daxlanden"]
+        },
+        "rule_100_grunwinkel":{
+            "filters":["filter_100_grunwinkel"],
+            "alarms":["alarm_telegram_100_grunwinkel"]
+        },
+        "rule_100_oberreut_bulach":{
+            "filters":["filter_100_oberreut_bulach"],
+            "alarms":["alarm_telegram_100_oberreut_bulach"]
+        },
+        "rule_100_rintheim":{
+            "filters":["filter_100_rintheim"],
+            "alarms":["alarm_telegram_100_rintheim"]
+        },
+        "rule_100_knielingen":{
+            "filters":["filter_100_knielingen"],
+            "alarms":["alarm_telegram_100_knielingen"]
+        },
+        "rule_100_muhlburg_nordweststadt":{
+            "filters":["filter_100_muhlburg_nordweststadt"],
+            "alarms":["alarm_telegram_100_muhlburg_nordweststadt"]
+        },
+        "rule_100_ruppurr_weiherfeld":{
+            "filters":["filter_100_ruppurr_weiherfeld"],
+            "alarms":["alarm_telegram_100_ruppurr_weiherfeld"]
+        },
         "rule_100_rare":{
             "filters":["filter_100_rare"],
             "alarms":["alarm_telegram_100_rare"]

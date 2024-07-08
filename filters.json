@@ -10,7 +10,7 @@
             },
             "filter_100_kern":{
                 "min_iv":100,
-                "geofences":["Kerngebiet"]
+                "geofences":["Innenstadt-West","Innenstadt-Ost","Weststadt","Nordstadt","Oststadt","Südstadt","Südweststadt"]
             },
             "filter_100_eggenreut":{
                 "min_iv":100,
@@ -18,11 +18,39 @@
             },
             "filter_100_durlach":{
                 "min_iv":100,
-                "geofences":["Durlach","Aue","Grötzingen"]
+                "geofences":["Durlach","Grötzingen"]
             },
             "filter_100_waldstadt_hagsfeld":{
                 "min_iv":100,
-                "geofences":["Hagsfeld"]
+                "geofences":["Hagsfeld","Waldstadt"]
+            },
+            "filter_100_daxlanden":{
+                "min_iv":100,
+                "geofences":["Daxlanden"]
+            },
+            "filter_100_grunwinkel":{
+                "min_iv":100,
+                "geofences":["Grünwinkel"]
+            },
+            "filter_100_oberreut_bulach":{
+                "min_iv":100,
+                "geofences":["Oberreut","Beiertheim-Bulach"]
+            },
+            "filter_100_rintheim":{
+                "min_iv":100,
+                "geofences":["Rintheim"]
+            },
+            "filter_100_knielingen":{
+                "min_iv":100,
+                "geofences":["Knielingen"]
+            },
+            "filter_100_muhlburg_nordweststadt":{
+                "min_iv":100,
+                "geofences":["Mühlburg","Nordweststadt"]
+            },
+            "filter_100_ruppurr_weiherfeld":{
+                "min_iv":100,
+                "geofences":["Rüppurr","Weiherfeld-Dammerstock"]
             },
             "filter_100_rare":{
                 "min_iv":100,
