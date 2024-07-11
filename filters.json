@@ -114,7 +114,7 @@
                 "monsters":[201]
             },
             "filter_vesprit":{
-                "min_iv":97,
+                "min_iv":0,
                 "monsters":[481]
             },
             "filter_togetic":{
